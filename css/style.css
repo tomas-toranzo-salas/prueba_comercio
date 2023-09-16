@@ -1,0 +1,429 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-menu {
+    background: linear-gradient(rgb(215, 14, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    width: 100%;
+    height: 50px;
+
+    position: fixed;
+}
+
+.navbar-menu ul {
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.nav-options li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+.nav-options li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 10px;
+    position: relative;
+
+    border-radius: 5px;
+}
+
+.nav-options li a:focus, .nav-options li a:hover {
+    background-color: darkkhaki;
+    transition: .5s;
+}
+
+.logo {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 8px;
+    left: 25px;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    float: right;
+    line-height: 50px;
+    margin-right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.banner {
+    height: 97vh;
+    position: relative;
+}
+
+.banner-content img {
+    margin: 5px 0;
+    width: 100%;
+}
+
+.banner-text {
+    position: absolute;
+    color: white;
+    top: 37%;
+    left: 50%;
+    transform: translateX(0%) translateY(-45%);
+}
+
+.banner-text h2 {
+    font-size: 45px;
+}
+
+.banner-text a {
+    display: block;
+    width: 100px;
+    color: rgb(230, 224, 224);
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid rgb(230, 224, 224);
+}
+
+.banner-text a:hover {
+    background-color: rgb(230, 224, 224);
+    color: grey;
+}
+
+.about {
+    top: 25px;
+    padding-top: 30px;
+    height: 97vh;
+    position: relative;
+    background-color: brown;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-content {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.about-content p, .about-content h2 {
+    padding: 10px 50px;
+}
+
+.about-img {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.about-imgx {
+    width: 33%;
+    float: left;
+}
+
+.img-job {
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+
+.testimonios {
+    height: 97vh;
+    padding-top: 30px;
+    position: relative;
+    background: url(../img/ciudad.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.testimonios-content {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.testimonios-content h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.testimonios-content p, .testimonios-content h2 {
+    padding: 10px 50px;
+}
+
+.testimonios-group {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.testimonios-card {
+    width: 33%;
+    float: left;
+}
+
+.img-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.contacto {
+    height: 97vh;
+    padding-top: 30px;
+    position: relative;
+}
+
+.contacto-content {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+.contacto-content h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.contacto-content p, .contacto-content h2 {
+    padding: 10px 50px;
+}
+
+.contacto-group {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.contacto-img {
+    width: 50%;
+    float: left;
+}
+
+.contacto-img img {
+    width: 55%;
+    border-radius: 60px;
+    display: block;
+    margin: auto;
+}
+
+.form-contact {
+    width: 50%;
+    float: left;
+}
+
+.form-control {
+    width: 85%;
+    padding: 0.8rem;
+    margin: 0.6rem 1rem;
+    display: block;
+    font-size: 1rem;
+    outline: 0;
+    border-radius: 5px;
+    border: 1.5px solid #c7c7c7;
+}
+
+.send-btn {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    margin: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+footer {
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer {
+    height: 10vh;
+    background-color: black;
+    color: white;
+}
+
+.copr {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+@media(max-width: 1024px) {
+    .banner {
+        height: 89vh;
+    }
+
+    .banner-content img {
+        margin-top: 50px;
+    }
+
+    .about, .testimonios, .contacto{
+        height: 100vh;
+    }
+
+    .img-job {
+        width: 210px;
+        height: 210px;
+    }
+
+    .testimonios-card p {
+        font-size: 13px;
+    }
+
+    .img-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .form-control {
+        width: 75%;
+        padding: 0.3rem;
+        margin: 0.6rem 1rem;
+    }
+
+    .send-btn {
+        font-size: 0.8rem;
+    }
+
+    .copr {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    .nav-options {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: dimgray;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+
+        transition: all .5s;
+    }
+
+    .nav-options li {
+        display: block;
+        border-bottom: 1px solid white;
+        z-index: 1;
+    }
+
+    .nav-options li a {
+        font-size: 18px;
+    }
+
+    nav li:hover {
+        background-color: darkkhaki;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .banner {
+        height: 55vh;
+    }
+
+    .banner-text h2 {
+        font-size: 30px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    .banner-text a {
+        font-size: 14px;
+        width: 60px;
+    }
+
+    .about, .testimonios {
+        top: -15px;
+    }
+
+    .about, .testimonios, .contacto {
+        height: 165vh;
+    }
+
+    .about-content h2, .testimonios-content h2, .contacto-content h2 {
+        font-size: 35px;
+    }
+
+    .testimonios-card p {
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+
+    .about-imgx {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonios-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-contact, .contacto-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-control, .send-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .send-btn {
+        width: 77%;
+    }
+
+    .copr p {
+        font-size: 14px;
+    }
+}

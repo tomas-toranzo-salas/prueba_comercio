@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Nuevo Página Web</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar-menu">
+            <input type="checkbox" name="" id="check">
+            <label for="check" class="checkbtn"><img src="img\menu.png" alt="icono-menú" width="35px"></label>
+            <label class="logo">>tts/</label>
+            <ul class="nav-options">
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">Proyectos</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <img src="img\circuitos.jpg" alt="imagen-banner">
+                <div class="banner-text">
+                    <h2>Sobre mí</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Natus fuga dolorum quo, laudantium atque officia?
+                    </p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="about-content">
+                <h2>Mis Proyectos</h2>
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit. 
+                    Architecto nisi et id repellendus a illo fugit, 
+                    eligendi eum omnis facilis harum magni itaque corrupti necessitatibus magnam debitis. 
+                    Reiciendis, nesciunt culpa.
+                </p>
+                <div class="about-img">
+                    <div class="about-imgx">
+                        <img src="img\web\web1.jpg" alt="imagenesTrabajo" class="img-job">
+                        <h4>CV Virtual</h4>
+                    </div>
+                    <div class="about-imgx">
+                        <img src="img\web\we2.jpg" alt="imagenesTrabajo" class="img-job">
+                        <h4>Biblioteca de Botones</h4>
+                    </div>
+                    <div class="about-imgx">
+                        <img src="img\web\web3.jpg" alt="imagenesTrabajo" class="img-job">
+                        <h4>Proyecto 03</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonios" id="clientes">
+
+            <div class="testimonios-content">
+                <h2>Clientes</h2>
+                <p>Mis clientes me respaldan y recomiendan</p>
+                <div class="testimonios-group">
+                    <div class="testimonios-card">
+                        <img src="img\perfil\mario.jpg" alt="Foto de Mario Sanchez" class="img-perfil">
+                        <h4>Mario Sanchez</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Officia iure modi molestias, ab, nesciunt, 
+                            consequatur excepturi sapiente et a id aspernatur quasi illo ratione ipsa consectetur deserunt delectus laborum. Quo?
+                        </p>
+                    </div>
+                    <div class="testimonios-card">
+                        <img src="img\perfil\ken.jpg" alt="Foto de Ken Stone" class="img-perfil">
+                        <h4>Ken Stone</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Natus necessitatibus enim corporis unde. 
+                            Esse vitae dolores rerum veniam debitis id magni, 
+                            obcaecati non modi ratione, officiis quisquam ullam? Saepe, illo?
+                        </p>
+                    </div>
+                    <div class="testimonios-card">
+                        <img src="img\perfil\lois.jpg" alt="Foto de Lois Newman" class="img-perfil">
+                        <h4>Lois Newman</h4>
+                        <p>Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. 
+                            Optio nisi veritatis nemo perspiciatis exercitationem, 
+                            similique assumenda natus perferendis consequuntur sit doloremque temporibus, 
+                            amet cumque, explicabo asperiores quaerat. 
+                            Maxime, amet numquam?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="contacto-content">
+                <h2>Contacto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aliquid eaque, eveniet quos numquam dicta officia totam aperiam maxime in. 
+                    Porro dolorem iusto nemo modi! 
+                    Unde excepturi inventore sed laudantium temporibus?
+                </p>
+                <div class="contacto-group">
+                    <form action="enviado.php" method="post" class="form-contact">
+                        <div>
+                            <input type="text" name="name" id="name" placeholder="Nombre y Apellido/s" class="form-control" required>
+                            <input type="email" name="mail" id="mail" placeholder="Email" class="form-control" required>
+                            <input type="text" name="phone" id="phone" placeholder="Nro Teléfono" class="form-control" required>
+                            <input type="text" name="asunto" id="asunto" placeholder="Asunto" class="form-control" required>
+                        </div>
+                        <textarea rows="5" name="message" id="message" placeholder="Mensaje" class="form-control" required></textarea>
+                        <input type="submit" class="send-btn">
+                    </form>
+
+                    <div class="contacto-img">
+                        <img src="img\sobre.jpg" alt="imagen Contacto">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="copr">
+                <p>Tomás Toranzo Salas &copy; 2023. Todos los Derechos Reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
